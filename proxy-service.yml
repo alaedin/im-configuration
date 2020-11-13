@@ -1,6 +1,9 @@
 server:
   port: 10003
-  name: proxy-service
+  
+spring:
+  application:
+    name: proxy-service
 # Map path to auth service
 zuul:
   routes:
@@ -17,11 +20,3 @@ zuul:
 # Exclude authorization from sensitive headers
       sensitive-headers: Cookie,Set-Cookie   
 
-
-eureka:
-  instance:
-    appname: proxy-service
-  client:
-    enabled: true
-    register-with-eureka: true
-    fetch-registry: true    

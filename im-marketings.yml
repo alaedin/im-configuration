@@ -2,6 +2,8 @@ server:
   port: 10006
 
 spring:
+  application:
+    name: im-marketings
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/immarketing?createDatabaseIfNotExist=true&serverTimezone=Africa/Tunis 
@@ -15,10 +17,4 @@ spring:
     properties:
       hibernate:
         format_sql : true
-eureka:
-  instance:
-    appname: im-marketings
-  client:
-    enabled: true
-    register-with-eureka: true
-    fetch-registry: true   
+
