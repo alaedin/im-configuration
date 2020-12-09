@@ -7,5 +7,5 @@ spring:
     
 invoice:
   path:
-    logo: /jasper/images/stackextend-logo.png
+    logo: /jasper/images/im-marketing-logo.png
     template: /jasper/valid_apointment.jrxml
